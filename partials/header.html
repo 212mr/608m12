@@ -1,0 +1,59 @@
+<header>
+
+    <div class="menu">
+        <div class="logo" id="top" align="center">
+            <img id="round-b-logo" align="center" src="image/dots_smallB_white.png" alt="0logo"/>
+            <img id="bos-big-logo" src="image/bos_logo_white1.png" alt="BoSwhite"/>
+        </div>
+        <ul>
+            <li><a href="home.php">&#9820; HOME</a></li>
+            <li><a href="productall.php">&#10046; SHOP</a></li>
+            <li><a href="cart.php">&#10070; CART</a></li>
+            <li onclick="document.getElementById('id01').style.display='block'"><a href="#">&#10084 LOGIN</a></li>
+
+        </ul>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="image/avatar1.png" alt="UserImage" class="avatar">
+                </div>
+
+                <div class="containerLogin">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <br>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <input type="checkbox" checked="checked"> <span style="font-size: .6em">Remember me</span>
+                    <br><button type="submit">Login</button>
+                    <button type="submit">New here? Create an account</button>
+                </div>
+                <div class="containerLogin" style="background-color:lightgrey">
+                    <button onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+                        Cancel
+                    </button>
+                    <span class="psw"><a href="#" style="text-decoration: underline;">Forgot password?</a></span>
+                </div>
+            </form>
+            <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+
+
+    </div>
+
+</header>
